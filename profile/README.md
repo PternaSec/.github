@@ -5,7 +5,9 @@
 <br />
 
 <div align="center">
-  <strong>PternaSec</strong> es un colectivo especializado en ciberseguridad enfocado en el desarrollo de recursos Open-Source. Proveemos guías estratégicas para operaciones ofensivas ($\textsf{\color{#ef4444}Red Team}$), defensivas ($\textsf{\color{#3b82f6}Blue Team}$), laboratorios de vulnerabilidades ($\textsf{\color{#10b981}Vuln-Labs}$) y herramientas automatizadas para la recolección de inteligencia ($\textsf{\color{#8b5cf6}OSINT}$).
+
+**PternaSec** es un colectivo especializado en ciberseguridad enfocado en el desarrollo de recursos Open-Source. Proveemos guías estratégicas para operaciones ofensivas (*$\color{#ef4444}{\textsf{Red Team}}$*), defensivas (*$\color{#3b82f6}{\textsf{Blue Team}}$*), laboratorios de vulnerabilidades (*$\color{#10b981}{\textsf{Vuln-Labs}}$*) y herramientas automatizadas para la recolección de inteligencia (*$\color{#8b5cf6}{\textsf{OSINT}}$*).
+
 </div>
 
 <br />
@@ -113,7 +115,7 @@
     <a href="https://pternasec.vercel.app/home">Home</a>
   </p>
 
-  *$\textsf{\color{#8b5cf6}Construyendo sistemas seguros a través de ofensiva práctica.}$*
+  *$\color{#8b5cf6}{\textsf{Construyendo sistemas seguros a través de ofensiva práctica.}}$*
 </div>
 
 <br />
