@@ -12,12 +12,6 @@
 
 <br />
 
-<div align="center">
-  <a href="https://pternasec.vercel.app">
-    <img src="./components/terminal.svg" width="600" alt="Terminal" />
-  </a>
-</div>
-
 <hr />
 
 ## Dominios Principales
