@@ -49,28 +49,28 @@
       <a href="../../scripts/">
         <img src="./components/icon-repo-scripts.svg" width="48" alt="Scripts Library" />
         <br />
-        <strong>Scripts</strong>
+        <strong>Scripts Library</strong>
       </a>
     </td>
     <td align="center" width="25%">
       <a href="../../vuln-labs/">
         <img src="./components/icon-repo-labs.svg" width="48" alt="Vulnerability Labs" />
         <br />
-        <strong>Vuln-Labs</strong>
+        <strong>Vuln-Labs Repo</strong>
       </a>
     </td>
     <td align="center" width="25%">
       <a href="../../news/">
         <img src="./components/icon-repo-news.svg" width="48" alt="Security News" />
         <br />
-        <strong>News</strong>
+        <strong>Security News</strong>
       </a>
     </td>
     <td align="center" width="25%">
       <a href="../../cli-core/">
         <img src="./components/icon-repo-core.svg" width="48" alt="CLI Core Engine" />
         <br />
-        <strong>CLI Core</strong>
+        <strong>CLI Core Engine</strong>
       </a>
     </td>
   </tr>
