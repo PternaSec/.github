@@ -89,7 +89,11 @@
 ## Últimas Alertas y Publicaciones
 
 <!-- START_SECTION:news -->
-* 📰 **[2026-07-05]** [¡Bienvenidos a PternaSec!](https://github.com/PternaSec/news/blob/main/pternasec-platform-launch/README.md)
+<div align="center">
+  <table>
+    <tr><td align="center" width="600"><br/><a href="https://github.com/PternaSec/news/blob/main/pternasec-platform-launch/README.md"><b>🚀 ¡Bienvenidos a PternaSec!</b></a><br/><i>📅 2026-07-05</i><br/><br/></td></tr>
+  </table>
+</div>
 <!-- END_SECTION:news -->
 
 <br />
