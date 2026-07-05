@@ -6,13 +6,14 @@
 
 <div align="center">
   <h3>Investigación Avanzada en Ciberseguridad & Vulnerability Training</h3>
-  <p><b>PternaSec</b> es un colectivo especializado en ciberseguridad enfocado en el desarrollo de recursos Open-Source para operaciones defensivas y ofensivas, laboratorios de vulnerabilidades (<b>Vuln-Labs</b>) y herramientas de recolección de inteligencia (<b>OSINT</b>).</p>
+  <p><b>PternaSec</b> es un colectivo especializado en ciberseguridad enfocado en el desarrollo de recursos Open-Source. Proveemos guías estratégicas para operaciones ofensivas (<b>Red Team</b>) y defensivas (<b>Blue Team</b>), laboratorios de vulnerabilidades (<b>Vuln-Labs</b>) y herramientas automatizadas para la recolección de inteligencia (<b>OSINT</b>).</p>
 </div>
 
 <hr />
 
 ## Dominios Principales
 
+<div align="center">
 <table width="100%">
   <tr>
     <td align="center" width="25%">
@@ -37,9 +38,11 @@
     </td>
   </tr>
 </table>
+</div>
 
 ## Repositorios Oficiales
 
+<div align="center">
 <table width="100%">
   <tr>
     <td align="center" width="25%">
@@ -72,6 +75,7 @@
     </td>
   </tr>
 </table>
+</div>
 
 ### Descripción de Componentes
 
@@ -90,3 +94,8 @@
   </p>
   <p><i>Construyendo sistemas seguros a través de ofensiva práctica.</i></p>
 </div>
+
+<br />
+
+> **¿Por qué PternaSec?** 
+> *Pterna* (πτέρνα) proviene del griego y significa "talón", en alusión directa al **Talón de Aquiles**. En PternaSec nos dedicamos a descubrir, estudiar y asegurar aquellas vulnerabilidades críticas (el talón de Aquiles) que comprometen los sistemas modernos, fortaleciendo la ciberseguridad desde su punto más débil.
