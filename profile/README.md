@@ -109,10 +109,27 @@
 
 <br />
 
+### PternaSec CLI
+
+Gestione y ejecute el ecosistema de herramientas directamente desde su terminal. Para instalación global vía NPM:
+```bash
+npm install -g pternasec-cli
+```
+
+Para ejecución aislada en entornos seguros vía Docker:
+```bash
+docker run -it --rm \
+  -v ~/.pternasec/scripts:/root/.pternasec/scripts \
+  ghcr.io/pternasec/cli-core:latest
+```
+
+<br />
+
 <div align="center">
   <p>
     <a href="https://pternasec.vercel.app">Platform</a> |
-    <a href="https://pternasec.vercel.app/home">Home</a>
+    <a href="https://pternasec.vercel.app/home">Home</a> |
+    <a href="https://github.com/PternaSec/cli-core">CLI</a>
   </p>
 
   <i> $\color{#8b5cf6}{\textsf{Construyendo sistemas seguros a través de ofensiva práctica.}}$ </i>
