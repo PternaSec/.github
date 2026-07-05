@@ -1,0 +1,66 @@
+name: Update News in README
+
+on:
+  schedule:
+    - cron: '0 */12 * * *' # Ejecuta cada 12 horas
+  workflow_dispatch: # Permite ejecución manual desde GitHub
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - name: Fetch Latest News and Update README
+        run: |
+          cat << 'EOF' > update_news.py
+          import urllib.request
+          import json
+          import re
+          
+          REPO = "PternaSec/news"
+          API_URL = f"https://api.github.com/repos/{REPO}/commits"
+          
+          try:
+              req = urllib.request.Request(API_URL)
+              req.add_header('User-Agent', 'PternaSec-Bot')
+              with urllib.request.urlopen(req) as response:
+                  commits = json.loads(response.read())
+          
+              news_lines = []
+              # Tomamos los 3 commits más recientes del repositorio de noticias
+              for commit in commits[:3]:
+                  msg = commit['commit']['message'].split('\n')[0]
+                  url = commit['html_url']
+                  date = commit['commit']['author']['date'][:10]
+                  news_lines.append(f"* 📰 **[{date}]** [{msg}]({url})")
+          
+              news_content = "\n".join(news_lines)
+          
+              # Actualizamos el README en la carpeta profile/
+              with open("profile/README.md", "r", encoding="utf-8") as f:
+                  readme = f.read()
+          
+              pattern = r"(<!-- START_SECTION:news -->\n)(.*?)(\n<!-- END_SECTION:news -->)"
+              new_readme = re.sub(pattern, r"\g<1>" + news_content + r"\g<3>", readme, flags=re.DOTALL)
+          
+              with open("profile/README.md", "w", encoding="utf-8") as f:
+                  f.write(new_readme)
+              
+              print("README actualizado con éxito.")
+          except Exception as e:
+              print(f"Error actualizando noticias: {e}")
+          EOF
+          python update_news.py
+          
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Automatización: Últimas noticias actualizadas en el README"
+          file_pattern: profile/README.md

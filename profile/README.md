@@ -6,7 +6,16 @@
 
 <div align="center">
   <h3>Investigación Avanzada en Ciberseguridad & Vulnerability Training</h3>
-  <p><b>PternaSec</b> es un colectivo especializado en ciberseguridad enfocado en el desarrollo de recursos Open-Source. Proveemos guías estratégicas para operaciones ofensivas (<b>Red Team</b>) y defensivas (<b>Blue Team</b>), laboratorios de vulnerabilidades (<b>Vuln-Labs</b>) y herramientas automatizadas para la recolección de inteligencia (<b>OSINT</b>).</p>
+
+**PternaSec** es un colectivo especializado en ciberseguridad enfocado en el desarrollo de recursos Open-Source. Proveemos guías estratégicas para operaciones ofensivas ($\textsf{\color{#ef4444}Red Team}$), defensivas ($\textsf{\color{#3b82f6}Blue Team}$), laboratorios de vulnerabilidades ($\textsf{\color{#10b981}Vuln-Labs}$) y herramientas automatizadas para la recolección de inteligencia ($\textsf{\color{#8b5cf6}OSINT}$).
+</div>
+
+<br />
+
+<div align="center">
+  <a href="https://pternasec.vercel.app">
+    <img src="./components/terminal.svg" width="600" alt="Terminal" />
+  </a>
 </div>
 
 <hr />
@@ -77,6 +86,16 @@
 </table>
 </div>
 
+## 🔥 Últimas Alertas y Publicaciones
+
+<!-- START_SECTION:news -->
+* 🔴 **[Critical]** *Placeholder:* Análisis de Zero-Day y mitigaciones.
+* 🟡 **[Warning]** *Placeholder:* Evasión de defensas y Syscalls directas.
+* 🟢 **[Info]** *Placeholder:* Nuevo Vuln-Lab de Active Directory disponible.
+<!-- END_SECTION:news -->
+
+<br />
+
 ### Descripción de Componentes
 
 - **[Website-PternaSec](https://pternasec.vercel.app/)** - La plataforma web interactiva principal que integra laboratorios, scripts y recursos de inteligencia. Desarrollada con Next.js y TailwindCSS.
@@ -92,7 +111,16 @@
     <a href="https://pternasec.vercel.app">Platform</a> |
     <a href="https://pternasec.vercel.app/home">Home</a>
   </p>
-  <p><i>Construyendo sistemas seguros a través de ofensiva práctica.</i></p>
+
+  *$\textsf{\color{#8b5cf6}Construyendo sistemas seguros a través de ofensiva práctica.}$*
+</div>
+
+<br />
+<hr />
+
+<div align="center">
+  <h2> Únete al Colectivo</h2>
+  <p>PternaSec es un esfuerzo impulsado por la comunidad. Si eres investigador de seguridad, pentester o desarrollador, te invitamos a contribuir a nuestros laboratorios y herramientas open-source.</p>
 </div>
 
 <br />
