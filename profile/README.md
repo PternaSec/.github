@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./components/header.svg" width="100%" alt="PternaSec Organization Header" />
+  <img src="./components/banner.svg" width="100%" alt="PternaSec Organization Header" />
 </div>
 
 <br />
