@@ -89,9 +89,9 @@
 ## 🔥 Últimas Alertas y Publicaciones
 
 <!-- START_SECTION:news -->
-* 🔴 **[Critical]** *Placeholder:* Análisis de Zero-Day y mitigaciones.
-* 🟡 **[Warning]** *Placeholder:* Evasión de defensas y Syscalls directas.
-* 🟢 **[Info]** *Placeholder:* Nuevo Vuln-Lab de Active Directory disponible.
+* 📰 **[2026-07-05]** [feat: Modificaciones](https://github.com/PternaSec/news/commit/87d30ccf33ee4af5ce9998efe83f4d9bc2809f37)
+* 📰 **[2026-07-05]** [Fix launch date](https://github.com/PternaSec/news/commit/40de711bfdf5d6d854f8433667775625e478a0ce)
+* 📰 **[2026-07-05]** [feat: add platform launch notice](https://github.com/PternaSec/news/commit/039ccd14855e01646caa91b1f410449c55eb7919)
 <!-- END_SECTION:news -->
 
 <br />
