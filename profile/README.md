@@ -86,7 +86,7 @@
 </table>
 </div>
 
-## 🔥 Últimas Alertas y Publicaciones
+## Últimas Alertas y Publicaciones
 
 <!-- START_SECTION:news -->
 * 📰 **[2026-07-05]** [feat: Modificaciones](https://github.com/PternaSec/news/commit/87d30ccf33ee4af5ce9998efe83f4d9bc2809f37)
