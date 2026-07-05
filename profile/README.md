@@ -5,9 +5,7 @@
 <br />
 
 <div align="center">
-  <h3>Investigación Avanzada en Ciberseguridad & Vulnerability Training</h3>
-
-**PternaSec** es un colectivo especializado en ciberseguridad enfocado en el desarrollo de recursos Open-Source. Proveemos guías estratégicas para operaciones ofensivas ($\textsf{\color{#ef4444}Red Team}$), defensivas ($\textsf{\color{#3b82f6}Blue Team}$), laboratorios de vulnerabilidades ($\textsf{\color{#10b981}Vuln-Labs}$) y herramientas automatizadas para la recolección de inteligencia ($\textsf{\color{#8b5cf6}OSINT}$).
+  <strong>PternaSec</strong> es un colectivo especializado en ciberseguridad enfocado en el desarrollo de recursos Open-Source. Proveemos guías estratégicas para operaciones ofensivas ($\textsf{\color{#ef4444}Red Team}$), defensivas ($\textsf{\color{#3b82f6}Blue Team}$), laboratorios de vulnerabilidades ($\textsf{\color{#10b981}Vuln-Labs}$) y herramientas automatizadas para la recolección de inteligencia ($\textsf{\color{#8b5cf6}OSINT}$).
 </div>
 
 <br />
