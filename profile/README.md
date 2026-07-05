@@ -12,8 +12,6 @@
 
 <br />
 
-<hr />
-
 ## Dominios Principales
 
 <div align="center">
