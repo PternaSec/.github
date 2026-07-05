@@ -111,10 +111,12 @@
 
 ### PternaSec CLI
 
-Gestione y ejecute el ecosistema de herramientas directamente desde su terminal. Para instalación global vía NPM:
+Gestione y ejecute el ecosistema de herramientas directamente desde su terminal. Para instalación global vía NPM (requiere permisos de administrador en Linux/macOS):
 ```bash
-npm install -g pternasec-cli
+sudo npm install -g pternasec-cli
 ```
+
+*(O puedes ejecutarlo sin instalar usando `npx pternasec-cli`)*
 
 Para ejecución aislada en entornos seguros vía Docker:
 ```bash
