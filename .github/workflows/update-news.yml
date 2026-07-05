@@ -37,16 +37,63 @@ jobs:
                   commits = json.loads(response.read())
           
               news_lines = []
-              # Tomamos los 3 commits más recientes del repositorio de noticias
-              for commit in commits[:3]:
-                  msg = commit['commit']['message'].split('\n')[0]
-                  url = commit['html_url']
+              seen_files = set()
+              
+              for commit in commits:
+                  if len(news_lines) >= 3:
+                      break
+                      
+                  sha = commit['sha']
                   date = commit['commit']['author']['date'][:10]
-                  news_lines.append(f"* 📰 **[{date}]** [{msg}]({url})")
+                  
+                  # Fetch commit details to see which files were modified
+                  detail_req = urllib.request.Request(f"{API_URL}/{sha}")
+                  detail_req.add_header('User-Agent', 'PternaSec-Bot')
+                  try:
+                      with urllib.request.urlopen(detail_req) as detail_res:
+                          commit_detail = json.loads(detail_res.read())
+                  except Exception:
+                      continue
+                      
+                  files = commit_detail.get('files', [])
+                  
+                  for file in files:
+                      filename = file['filename']
+                      # Ignorar el README principal de la raiz, buscar los de las carpetas de noticias
+                      if not filename.endswith('.md') or filename == 'README.md':
+                          continue
+                          
+                      if filename in seen_files:
+                          continue
+                          
+                      seen_files.add(filename)
+                      
+                      # Usamos el mensaje del commit por defecto
+                      title = commit['commit']['message'].split('\n')[0]
+                      
+                      # Intentamos extraer el titulo real (# Titulo) leyendo el archivo Markdown!
+                      try:
+                          raw_url = f"https://raw.githubusercontent.com/{REPO}/main/{filename}"
+                          raw_req = urllib.request.Request(raw_url)
+                          raw_req.add_header('User-Agent', 'PternaSec-Bot')
+                          with urllib.request.urlopen(raw_req) as raw_res:
+                              content = raw_res.read().decode('utf-8')
+                              match = re.search(r'^#\s+(.+)', content, re.MULTILINE)
+                              if match:
+                                  title = match.group(1).strip()
+                      except Exception:
+                          pass
+                          
+                      # Link directo al archivo de la noticia (no al commit)
+                      file_url = f"https://github.com/{REPO}/blob/main/{filename}"
+                      news_lines.append(f"* 📰 **[{date}]** [{title}]({file_url})")
+                      break # Solo una noticia por commit
+          
+              if not news_lines:
+                  news_lines = ["* No hay noticias recientes."]
           
               news_content = "\n".join(news_lines)
           
-              # Actualizamos el README en la carpeta profile/
               with open("profile/README.md", "r", encoding="utf-8") as f:
                   readme = f.read()
           
