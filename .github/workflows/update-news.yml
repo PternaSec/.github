@@ -86,13 +86,14 @@ jobs:
                           
                       # Link directo al archivo de la noticia (no al commit)
                       file_url = f"https://github.com/{REPO}/blob/main/{filename}"
-                      news_lines.append(f"* 📰 **[{date}]** [{title}]({file_url})")
+                      row = f'    <tr><td align="center" width="600"><br/><a href="{file_url}"><b>🚀 {title}</b></a><br/><i>📅 {date}</i><br/><br/></td></tr>'
+                      news_lines.append(row)
                       break # Solo una noticia por commit
           
               if not news_lines:
-                  news_lines = ["* No hay noticias recientes."]
+                  news_lines = ['    <tr><td align="center" width="600">No hay noticias recientes.</td></tr>']
           
-              news_content = "\n".join(news_lines)
+              news_content = '<div align="center">\n  <table>\n' + "\n".join(news_lines) + '\n  </table>\n</div>'
           
               with open("profile/README.md", "r", encoding="utf-8") as f:
                   readme = f.read()
