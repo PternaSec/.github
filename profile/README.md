@@ -46,28 +46,28 @@
 <table width="100%">
   <tr>
     <td align="center" width="25%">
-      <a href="../../scripts/">
+      <a href="https://github.com/PternaSec/scripts">
         <img src="./components/icon-repo-scripts.svg" width="48" alt="Scripts Library" />
         <br />
         <strong>Scripts Library</strong>
       </a>
     </td>
     <td align="center" width="25%">
-      <a href="../../vuln-labs/">
+      <a href="https://github.com/PternaSec/vuln-labs">
         <img src="./components/icon-repo-labs.svg" width="48" alt="Vulnerability Labs" />
         <br />
         <strong>Vuln-Labs Repo</strong>
       </a>
     </td>
     <td align="center" width="25%">
-      <a href="../../news/">
+      <a href="https://github.com/PternaSec/news">
         <img src="./components/icon-repo-news.svg" width="48" alt="Security News" />
         <br />
         <strong>Security News</strong>
       </a>
     </td>
     <td align="center" width="25%">
-      <a href="../../cli-core/">
+      <a href="https://github.com/PternaSec/cli-core">
         <img src="./components/icon-repo-core.svg" width="48" alt="CLI Core Engine" />
         <br />
         <strong>CLI Core Engine</strong>
