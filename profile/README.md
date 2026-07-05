@@ -115,7 +115,7 @@
     <a href="https://pternasec.vercel.app/home">Home</a>
   </p>
 
-  *$\color{#8b5cf6}{\textsf{Construyendo sistemas seguros a través de ofensiva práctica.}}$*
+  <i> $\color{#8b5cf6}{\textsf{Construyendo sistemas seguros a través de ofensiva práctica.}}$ </i>
 </div>
 
 <br />
