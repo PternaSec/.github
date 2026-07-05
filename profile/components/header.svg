@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050505" />
+      <stop offset="50%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#111" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1" />
+    </pattern>
+
+    <!-- Accent Line Gradient -->
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0" />
+      <stop offset="20%" stop-color="#3b82f6" stop-opacity="0.8" />
+      <stop offset="80%" stop-color="#8b5cf6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- PternaSec Text Gradient -->
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#a3a3a3" />
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg)" rx="12" />
+  <rect width="100%" height="100%" fill="url(#grid)" rx="12" />
+
+  <!-- Top Decorative Line -->
+  <rect x="0" y="0" width="800" height="2" fill="url(#accent)" />
+
+  <!-- Abstract Geometry representing Shield/Network -->
+  <g opacity="0.15" transform="translate(600, 125)">
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4 4" />
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#8b5cf6" stroke-width="1" />
+    <path d="M-60,0 L60,0 M0,-60 L0,60 M-42,-42 L42,42 M-42,42 L42,-42" stroke="#ffffff" stroke-width="0.5" />
+    <circle cx="0" cy="0" r="3" fill="#ffffff" />
+    <circle cx="60" cy="0" r="3" fill="#3b82f6" />
+    <circle cx="0" cy="60" r="3" fill="#8b5cf6" />
+  </g>
+  <g opacity="0.1" transform="translate(100, 50) scale(0.5)">
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2 4" />
+    <path d="M-60,0 L60,0 M0,-60 L0,60" stroke="#ffffff" stroke-width="0.5" />
+  </g>
+
+  <!-- Typography -->
+  <text x="80" y="115" font-family="'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="52" font-weight="900" fill="url(#text-gradient)" letter-spacing="-1">PternaSec</text>
+  <text x="83" y="150" font-family="'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#737373" letter-spacing="4" text-transform="uppercase">Advanced Security Collective</text>
+
+  <!-- Bottom Accent -->
+  <path d="M80,180 L200,180" stroke="#3b82f6" stroke-width="2" />
+  <path d="M205,180 L230,180" stroke="#8b5cf6" stroke-width="2" opacity="0.5" />
+</svg>
