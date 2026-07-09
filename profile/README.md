@@ -84,7 +84,7 @@
 <div align="center">
   <table>
     <tr><td align="center" width="600"><br/><a href="https://github.com/PternaSec/news/blob/main/guia-registro-github/README.md"><b>🚀 Cómo acceder a los apartados de Red Team y Blue Team</b></a><br/><i>📅 2026-07-05</i><br/><br/></td></tr>
-    <tr><td align="center" width="600"><br/><a href="https://github.com/PternaSec/news/blob/main/lanzamiento-pternasec-cli-v1/README.md"><b>🚀 El Motor de Ciberseguridad Definitivo ya está aquí</b></a><br/><i>📅 2026-07-05</i><br/><br/></td></tr>
+    <tr><td align="center" width="600"><br/><a href="https://github.com/PternaSec/news/blob/main/lanzamiento-pternasec-cli-v1/README.md"><b>🚀 feat: add release announcement for PternaSec CLI v1.0.0 to news documentation</b></a><br/><i>📅 2026-07-05</i><br/><br/></td></tr>
     <tr><td align="center" width="600"><br/><a href="https://github.com/PternaSec/news/blob/main/pternasec-platform-launch/README.md"><b>🚀 ¡Bienvenidos a PternaSec!</b></a><br/><i>📅 2026-07-05</i><br/><br/></td></tr>
   </table>
 </div>
